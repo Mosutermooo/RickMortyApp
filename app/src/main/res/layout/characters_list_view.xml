@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#00000000"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    tools:background="@color/MainThemeColor4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/charactersImage"
+            android:src="@drawable/ic_outline_account_circle_24"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Rick Sanchez"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/EpisodesCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="33 Episode(s)"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:background="#00000000"
+            android:layout_gravity="center|end"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

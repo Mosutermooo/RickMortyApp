@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_app_navigation"
+    app:startDestination="@id/charactersFragment2">
+
+    <fragment
+        android:id="@+id/characterViewFragment"
+        android:name="com.example.rickmorty.ui.fragments.CharacterViewFragment"
+        android:label="fragment_character_view"
+        tools:layout="@layout/fragment_character_view" >
+        <argument
+            android:name="character"
+            app:argType="com.example.rickmorty.models.ApiCharacter" />
+        <action
+            android:id="@+id/action_characterViewFragment_to_episodeViewFragment"
+            app:destination="@id/episodeViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/charactersFragment2"
+        android:name="com.example.rickmorty.ui.fragments.CharactersFragment"
+        android:label="fragment_characters_fragement"
+        tools:layout="@layout/fragment_characters_fragement" >
+        <action
+            android:id="@+id/action_charactersFragment2_to_characterViewFragment"
+            app:destination="@id/characterViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/episodeFragment2"
+        android:name="com.example.rickmorty.ui.fragments.EpisodeFragment"
+        android:label="fragment_episode"
+        tools:layout="@layout/fragment_episode" >
+        <action
+            android:id="@+id/action_episodeFragment2_to_episodeViewFragment"
+            app:destination="@id/episodeViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment2"
+        android:name="com.example.rickmorty.ui.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment2_to_characterViewFragment"
+            app:destination="@id/characterViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/locationsFragment2"
+        android:name="com.example.rickmorty.ui.fragments.LocationsFragment"
+        android:label="fragment_locations"
+        tools:layout="@layout/fragment_locations" >
+        <action
+            android:id="@+id/action_locationsFragment2_to_locationViewFragment"
+            app:destination="@id/locationViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodeViewFragment"
+        android:name="com.example.rickmorty.ui.fragments.EpisodeViewFragment"
+        android:label="fragment_episode_view"
+        tools:layout="@layout/fragment_episode_view" >
+        <argument
+            android:name="episode"
+            app:argType="com.example.rickmorty.models.Episode" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationViewFragment"
+        android:name="com.example.rickmorty.ui.fragments.LocationViewFragment"
+        android:label="fragment_location_view"
+        tools:layout="@layout/fragment_location_view" >
+        <argument
+            android:name="location"
+            app:argType="com.example.rickmorty.models.SingleLocation" />
+        <action
+            android:id="@+id/action_locationViewFragment_to_characterViewFragment"
+            app:destination="@id/characterViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

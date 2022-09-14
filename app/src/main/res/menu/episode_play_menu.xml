@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Lock"
+        android:icon="@drawable/ic_baseline_lock_open_24"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        android:title="@string/lock"/>
+    <item android:id="@+id/Cast"
+        android:icon="@drawable/ic_baseline_cast_24"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
+        android:title="@string/cast"/>
+</menu>

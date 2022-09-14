@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/charactersFragment2"
+        android:title="@string/characters"
+        android:icon="@drawable/ic_outline_account_circle_24"/>
+
+    <item android:id="@+id/locationsFragment2"
+        android:title="@string/locations"
+        android:icon="@drawable/ic_baseline_location_on_24"/>
+
+    <item android:id="@+id/episodeFragment2"
+        android:title="@string/episodes"
+        android:icon="@drawable/ic_baseline_video_stable_24"/>
+
+    <item android:id="@+id/favoriteFragment2"
+        android:title="@string/favorite"
+        android:icon="@drawable/ic_baseline_favorite_24"/>
+
+</menu>

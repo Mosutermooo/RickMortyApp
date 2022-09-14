@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Rick And Morty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="characters">Characters</string>
+    <string name="locations">Locations</string>
+    <string name="episodes">Episodes</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="home">Home</string>
+    <string name="added_to_favorite">Added To Favorite</string>
+    <string name="removed_from_favorite">Removed from favorite</string>
+    <string name="delete">Delete All</string>
+    <string name="location">Location</string>
+    <string name="name">Name</string>
+    <string name="Air_date">Air Date</string>
+    <string name="episode">Episode</string>
+    <string name="characterView">Character</string>
+    <string name="lock">Lock</string>
+    <string name="cast">Cast</string>
+    <string name="type">Type</string>
+    <string name="dimension">Dimension</string>
+    <string name="residents">Location Resident</string>
+    <string name="the_location_does_not_have_residents">The location does not have residents</string>
+    <string name="filter_by_name">Filter By Name</string>
+    <string name="filter_by_gender">Filter By Gender</string>
+    <string name="filter_by_dimension">Filter By Dimension</string>
+    <string name="search_by_name">Search by name</string>
+</resources>
